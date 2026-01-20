@@ -1,0 +1,7 @@
+src/
+tsconfig.json
+.eslintrc.js
+.prettierrc
+*.log
+node_modules
+.DS_Store

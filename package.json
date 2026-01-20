@@ -1,0 +1,65 @@
+{
+  "name": "twigs-mobile",
+  "version": "0.1.1",
+  "description": "React Native icon package - Mobile companion to twigs-react-icons",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Prem Sapkale",
+  "license": "MIT",
+  "homepage": "https://github.com/psapkale/twigs-mobile#readme",
+  "bugs": {
+    "url": "https://github.com/psapkale/twigs-mobile/issues"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "react-native",
+    "expo",
+    "icons",
+    "svg",
+    "twigs",
+    "mobile",
+    "ui",
+    "components",
+    "design-system",
+    "icons-library"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "typecheck": "tsc --noEmit",
+    "prepare": "npm run build",
+    "version": "npm run build",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0",
+    "react-native-svg": ">=13.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.7.1",
+    "react": "^18.0.0",
+    "react-native": "^0.72.0",
+    "react-native-svg": "^13.0.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psapkale/twigs-mobile.git"
+  }
+}
